@@ -1,16 +1,24 @@
 # Symfony-Docker
 
+## RUN Docker images 
+
 RUN docker-compose up -d
+
+## Git configuration
 
 git config --global user.email 'your_email'
 
 git config --global user.name 'your_name'
+
+## Locate in Docker Project
 
 RUN docker ps
 
 symfony new my-project-name --full
 
 docker exec -ti 'php_container_idd' bash
+
+## Database Configuration
 
 locate in my-project-name
 
