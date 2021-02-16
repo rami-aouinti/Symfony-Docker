@@ -16,11 +16,17 @@ RUN docker ps
 
 symfony new my-project-name --full
 
-docker exec -ti 'php_container_idd' bash
+docker exec -ti 'php_container_id' bash
 
-## Database Configuration
+## Start Server
 
 locate in my-project-name
+
+symfony server:start
+
+location: 127.0.0.1:5000
+
+## Database Configuration
 
 modif file .env && rename this line 
 
@@ -29,3 +35,4 @@ DATABASE_URL="postgresql://db_user:db_password@127.0.0.1:5432/db_name?serverVers
 with 
 
 DATABASE_URL="mysql://root:root@mysql:3306/test?serverVersion=5.7"
+
